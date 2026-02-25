@@ -65,6 +65,8 @@ private:
                           (BATTERY_LEVELS[1].adc - BATTERY_LEVELS[0].adc);
             battery_level_ = ratio * 100;
         }
+        //临时测试
+        battery_level_ = 100;
     }
 
 public:
