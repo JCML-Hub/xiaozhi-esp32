@@ -6,18 +6,18 @@
 
 ## 遇到问题以及解决
 ### 项目头文件报错以及无法正常索引
-    在项目根目录下创建.vscode文件夹，并在.vscode文件夹下创建c_cpp_properties.json文件，内容如下：
-'''
+在项目根目录下创建.vscode文件夹，并在.vscode文件夹下创建c_cpp_properties.json文件，内容如下：
+```
 {
     "configurations": [
         {
             "name": "ESP-IDF",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/esp/v5.5.3/esp-idf/components/**"
+                "C:/esp/v5.5.3/esp-idf/components/**" ###对应ESP-IDF的按装路径下的components文件夹
             ]
         }
     ],
     "version": 4
 }
-'''
+```
